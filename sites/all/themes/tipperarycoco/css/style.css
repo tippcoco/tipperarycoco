@@ -1497,12 +1497,12 @@ body.modal-open,
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(http://www.tipperarycocodev.ie/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat 0 -32px;
+	background: url(/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(http://www.tipperarycocodev.ie/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat -43px -32px;
+	background: url(/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
