@@ -73,14 +73,14 @@ padding-left: 3px;
 }
 .field-name-field-area .field-item {
 padding-left: 18px;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/dataicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/dataicon.png');
 background-repeat: no-repeat;
 background-position: center left;}
 
 .spacer {
 padding-top: 13px;}
 li.want-items{
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/doublearrow.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/doublearrow.png');
 }
 li.want-items a{
 color: #2c2c2c;
@@ -130,7 +130,7 @@ a.facebook {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/facebook_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/facebook_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -138,7 +138,7 @@ a.flickr {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/flickr_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/flickr_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -146,7 +146,7 @@ a.picasaweb {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/picasa_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/picasa_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -154,7 +154,7 @@ a.slideshare {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/slideshare_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/slideshare_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -162,7 +162,7 @@ a.twitter {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/twitter_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/twitter_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -170,7 +170,7 @@ a.vimeo {
 padding-left: 30px;
 padding-top: 5px;
 padding-bottom: 5px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/vimeo_icon.png");
+background-image: url("/sites/default/files/styles/large/public/img/vimeo_icon.png");
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -299,7 +299,7 @@ border-radius: 0px;
 
 .cashelbginner {
 background-color: transparent;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/bgimage_inner.jpg");
+background-image: url("/sites/default/files/styles/large/public/img/bgimage_inner.jpg");
 background-repeat: no-repeat;
 background-position: top left;
 margin-top: 20px;
@@ -334,7 +334,7 @@ text-transform: capitalize;}
 
 .formforstyle {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/formicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/formicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 
@@ -344,7 +344,7 @@ text-decoration:none;
 
 .views-field-field-publication-upload-1 {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-publication-upload-1 a:hover{
@@ -360,27 +360,27 @@ text-decoration:none;}
 
 .views-field-field-publication-upload-2{
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-publication-upload-3 {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-publication-upload-4 {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-publication-upload-5 {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .field-items.file {
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 
@@ -391,21 +391,21 @@ padding: 3px;}
 
 .views-field-field-link-to-maps{
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/mapicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/mapicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-link-to-maps a{
 padding-left: 20px;}
 .views-field-field-link-to-map-2{
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/mapicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/mapicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-link-to-map-2 a{
 padding-left: 20px;}
 .views-field-field-link-to-map-3{
 background-color: transparent;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/mapicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/mapicon.png');
 background-repeat: no-repeat;
 background-position: top left;}
 .views-field-field-link-to-map-3 a{
@@ -422,12 +422,12 @@ text-transform: uppercase;
 
 li.pubs {
 line-height: 20px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/pubsicon.png');
 }
 
 .bulletpt {
 padding-left: 18px;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/dataicon2.png');
+background-image: url('/sites/default/files/styles/large/public/img/dataicon2.png');
 background-repeat: no-repeat;
 background-position: top left;
 }
@@ -444,7 +444,7 @@ font-weight: normal;}
 
 li.bullet {
 line-height: 20px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/dataicon.png');}
+list-style-image:url('/sites/default/files/styles/large/public/img/dataicon.png');}
 
 li.bullet a:hover {
 color: #005580;
@@ -454,7 +454,7 @@ font-weight: normal;}
 
 li.publications {
 line-height: 20px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/pubsicon.png');
 }
 
 li.publications a:hover {
@@ -465,7 +465,7 @@ font-weight: normal;}
 
 li.forms-icon {
 line-height: 20px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/forms_icon.png');
 }
 
 li.forms-icon a:hover {
@@ -476,7 +476,7 @@ font-weight: normal;}
 li.newsevents {
 line-height: 20px;
 font-size: 15px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/newsicon.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/newsicon.png');
 padding-bottom: 6px;
 }
 
@@ -491,17 +491,17 @@ font-weight: normal;}
 .pane-news-events h2 {
 padding: 18px 18px 18px 65px;
 font-size: 16px;
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/newsevents.jpg");
+background-image: url("/sites/default/files/styles/large/public/img/newsevents.jpg");
 background-repeat: no-repeat;
 background-position: top left;
 color: #fff;}
 
 .view-related-maps {
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/map_bg.jpg");
+background-image: url("/sites/default/files/styles/large/public/img/map_bg.jpg");
 padding: 15px;}
 
 .mapitem {
-background-image: url("http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/mapicon.png");
+background-image: url("/sites/default/files/styles/large/public/img/mapicon.png");
 background-repeat: no-repeat;
 background-position: center left;
 border-left: 4px solid transparent;
@@ -524,7 +524,7 @@ padding: 2px;}
 
 ul.planninglists {
 line-height: 20px;
-list-style-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/dataicon1.png');
+list-style-image:url('/sites/default/files/styles/large/public/img/dataicon1.png');
 }
 
 h2{
@@ -548,7 +548,7 @@ width: 80%;
 padding-bottom: 2px;
 padding-top: 2px;
 border-bottom: 1px solid #000;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/more_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/more_icon.png');
 background-repeat: no-repeat;
 background-position: center right;
 padding-right: 18px;
@@ -556,123 +556,123 @@ text-align:right;
 background-color: #f2f2f2;
 }
 .field-name-field-publication-upload-1{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 margin-top: 3px;
 }
 .field-name-field-publication-upload-2{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-upload-3{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-upload-4{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-upload-5{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 
 .field-name-field-publication-6{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-7{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-8{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-9{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-publication-10{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-file-upload {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-upload-2 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-upload-3 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-upload-4 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-upload-5 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-6 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-7 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-8 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-9 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
 }
 .field-name-field-form-10 {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/forms_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/forms_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;
@@ -689,7 +689,7 @@ background: #f2f2f2;
 padding-left: 3px;}
 .field-name-field-category a{
 padding-left:18px;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/dataicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/dataicon.png');
 background-repeat: no-repeat;
 background-position: center left;}
 
@@ -702,7 +702,7 @@ background: #f2f2f2;
 padding: 5px;}
 .field-name-field-link-to-maps{
 padding-left:18px;
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/mapicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/mapicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
@@ -718,34 +718,34 @@ padding: 5px;
 background: #f2f2f2;}
 
 .field-name-field-granted{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
 .field-name-field-received{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
 .field-name-field-refused{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
 .field-name-field-invalid{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
 .field-name-field-further-information{
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/pubsicon.png');
+background-image: url('/sites/default/files/styles/large/public/img/pubsicon.png');
 background-repeat: no-repeat;
 background-position: center left;
 margin-left: 3px;}
 
 
 .pane-title {
-background-image: url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/header_icon.png');
+background-image: url('/sites/default/files/styles/large/public/img/header_icon.png');
 background-repeat: no-repeat;
 background-position: top left;
 padding-left: 21px;}
@@ -1070,20 +1070,20 @@ color: #005580;
 text-decoration: none;}
 
 .ctype-News_General {
-background-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/gnewsicon.png');
+background-image:url('/sites/default/files/styles/large/public/img/gnewsicon.png');
 background-repeat: no-repeat;
 background-position: center left;}
 
 span.ctype-Alert {
 padding-left: 24px;}
 .ctype-Alert {
-background-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/alerts_icon.png');
+background-image:url('/sites/default/files/styles/large/public/img/alerts_icon.png');
 background-repeat: no-repeat;
 background-position: center left;
 }
 
 .ctype-Event{
-background-image:url('http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/eventicon.png');
+background-image:url('/sites/default/files/styles/large/public/img/eventicon.png');
 background-repeat: no-repeat;
 background-position: center left;}
 

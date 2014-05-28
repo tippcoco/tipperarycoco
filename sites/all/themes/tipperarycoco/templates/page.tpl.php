@@ -272,7 +272,7 @@ Copyright © 2014 Tipperary County Council
 </div>
 </div>
 
-<script src="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/Tiles/js/jquery.tabSlideOut.v1.3.js"></script>
+<script src="/sites/all/themes/tipperarycoco/Tiles/js/jquery.tabSlideOut.v1.3.js"></script>
 <script type="text/javascript">
 
 			jQuery('document').ready(function($){

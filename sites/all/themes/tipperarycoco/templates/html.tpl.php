@@ -9,12 +9,12 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <!--[if IE 8]> 
-  <link rel="stylesheet" href="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/css/styleie.css" />
+  <link rel="stylesheet" href="/sites/all/themes/tipperarycoco/css/styleie.css" />
   <![endif]-->
   <!--[if IE 7]> 
-  <link rel="stylesheet" href="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/css/styleie7.css" />
+  <link rel="stylesheet" href="/sites/all/themes/tipperarycoco/css/styleie7.css" />
   <![endif]-->
-  <link href="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/css/FontAwesome/css/font-awesome.css" rel="stylesheet">
+  <link href="/sites/all/themes/tipperarycoco/css/FontAwesome/css/font-awesome.css" rel="stylesheet">
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,9 +22,9 @@
   
   
   <?php print $scripts; ?>
-  <script src="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-dropdown.js"></script>
-  <script src="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-carousel.js"></script>
-  <script src="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-transition.js"></script>
+  <script src="/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-dropdown.js"></script>
+  <script src="/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-carousel.js"></script>
+  <script src="/sites/all/themes/tipperarycoco/bootstrap/js/bootstrap-transition.js"></script>
   <meta name="google-translate-customization" content="f321577e8a5f7c7b-6a339af3b886c416-gcd1e55fa0b46dee6-14"></head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">

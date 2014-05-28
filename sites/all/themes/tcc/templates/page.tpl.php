@@ -43,7 +43,7 @@
 <div class="container">
 <div class="span6">
 <div class="crest">
-<img src = "http://www.tipperarycocostage.ie/sites/default/files/styles/large/public/img/test1.png">
+<img src = "/sites/default/files/styles/large/public/img/test1.png">
 </div>
 </div>
 </div>

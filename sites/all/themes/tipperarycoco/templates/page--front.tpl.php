@@ -297,7 +297,7 @@
 		<ul class="social">
 		<li><a href="https://www.facebook.com/pages/Tipperary-County-Council/657297467622634"><img src="/sites/default/files/img/fb.png"></a></li>
 		<li><a href="http://twitter.com/tipperarycc"><img src="/sites/default/files/img/tw.png"></a></li>
-		<li><a href="http://www.tipperarycocostage.ie/news/feed/node"><img src="/sites/default/files/img/rs.png"></a></li>
+		<li><a href="/news/feed/node"><img src="/sites/default/files/img/rs.png"></a></li>
 		</ul>
 		</div>
       </div>
@@ -402,7 +402,7 @@ Copyright © 2014 Tipperary County Council
 </div>
 </div>
 
-<script src="http://www.tipperarycocostage.ie/sites/all/themes/tipperarycoco/Tiles/js/jquery.tabSlideOut.v1.3.js"></script>
+<script src="/sites/all/themes/tipperarycoco/Tiles/js/jquery.tabSlideOut.v1.3.js"></script>
 
 <script type="text/javascript">
 (function ($) {
