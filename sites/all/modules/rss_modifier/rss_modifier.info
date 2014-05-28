@@ -1,0 +1,3 @@
+name = RSS Modifier
+description = Modify Core RSS fields. Custom module. Created 04/04/2014, Donal McWeeney.
+core = 7.x
