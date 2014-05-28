@@ -567,7 +567,7 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_authorize_operations'] = FALSE;
 
 # Use Redis cache
-$conf['cache_backends'][]            = 'sites/all/modules/redis_cache/phpredis.inc';
+$conf['cache_backends'][]            = 'sites/all/modules/redis/phpredis.inc';
 $conf['cache_class_cache']           = 'RedisPhpRedisCache';
 $conf['cache_class_cache_menu']      = 'RedisPhpRedisCache';
 $conf['cache_class_cache_bootstrap'] = 'RedisPhpRedisCache';
