@@ -567,9 +567,9 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 # $conf['allow_authorize_operations'] = FALSE;
 
 # Use Redis cache
-$conf['cache_backends'][]            = 'sites/all/modules/redis/phpredis.inc';
-$conf['cache_class_cache']           = 'RedisPhpRedisCache';
-$conf['cache_class_cache_menu']      = 'RedisPhpRedisCache';
-$conf['cache_class_cache_bootstrap'] = 'RedisPhpRedisCache';
-$conf['redis_cache_socket'] = '/tmp/redis.sock';
-
+$conf['redis_client_interface'] = 'PhpRedis'; // Can be "Predis".
+$conf['redis_client_host']      = '1.2.3.4';  // Your Redis instance hostname.
+$conf['lock_inc']               = 'sites/all/modules/redis/redis.lock.inc';
+$conf['path_inc']               = 'sites/all/modules/redis/redis.path.inc';
+$conf['cache_backends'][]       = 'sites/all/modules/redis/redis.autoload.inc';
+$conf['cache_default_class']    = 'Redis_Cache';
