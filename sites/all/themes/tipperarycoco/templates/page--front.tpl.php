@@ -7,7 +7,7 @@
    </div>
    <div class="span4 border add-back">
    <div class="span1"><img style="padding-right: 8px" src="/sites/default/files/img/ph.png"></div>
-   <div class="span3">Telephone:<br> 0761 065000<br>9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948</div>
+   <div class="span3">Telephone:<br> 0761 065000<br>9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948 | 052 915 7869</div>
    </div>
    <div class="span3 border add-back">
    <div class="span1"><img style="padding-right: 8px" src="/sites/default/files/img/ma.png"></div>
@@ -28,7 +28,7 @@
    </div>
    <div class="span12 addback-tablet">
    <div class="span2"><img style="padding-right: 8px" src="/sites/default/files/img/ph.png"></div>
-   <div class="span10">Telephone: 0761 065000 9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948</div>
+   <div class="span10">Telephone: 0761 065000 9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948 | 052 915 7869</div>
    </div>
    <div class="span12 addback-tablet">
    <div class="span2"><img style="padding-right: 8px" src="/sites/default/files/img/ma.png"></div>
@@ -57,7 +57,7 @@
       <img style="padding-right: 8px" src="/sites/default/files/img/ph.png">
     </div>
     <div class="span10 addback-phone2">
-      Telephone: 0761 065000 9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948
+      Telephone: 0761 065000 9.30 - 4.30 Mon-Fri Emergency Out of Hours: 1890 923 948 | 052 915 7869
     </div>
   </div>
 </div>
@@ -159,7 +159,7 @@
           </div>
           </div>
 		  <div class="slide4 item">
-         <div class="container"><img src="/sites/default/files/img/slide10.jpg">
+         <div class="container"><img src="/sites/default/files/img/slide11.jpg">
 		 </div>
 		 <div class="carousel-caption hidden-phone">
               <h1>One Culture</h1>
@@ -295,8 +295,8 @@
 		</div>
         <div class="span4">
 		<ul class="social">
-		<li><a href="https://www.facebook.com/pages/Tipperary-County-Council/657297467622634"><img src="/sites/default/files/img/fb.png"></a></li>
-		<li><a href="http://twitter.com/tipperarycc"><img src="/sites/default/files/img/tw.png"></a></li>
+		<li><a href="https://www.facebook.com/tipperarycc"><img src="/sites/default/files/img/fb.png"></a></li>
+		<li><a href="http://twitter.com/tipperarycoco"><img src="/sites/default/files/img/tw.png"></a></li>
 		<li><a href="/news/feed/node"><img src="/sites/default/files/img/rs.png"></a></li>
 		</ul>
 		</div>
@@ -401,8 +401,6 @@ Copyright © 2014 Tipperary County Council
 </div>
 </div>
 </div>
-
-<script src="/sites/all/themes/tipperarycoco/Tiles/js/jquery.tabSlideOut.v1.3.js"></script>
 
 <script type="text/javascript">
 (function ($) {

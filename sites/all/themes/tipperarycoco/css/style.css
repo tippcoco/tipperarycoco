@@ -1497,12 +1497,12 @@ body.modal-open,
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat 0 -32px;
+	background: url(http://www.tipperarycocodev.ie/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat -43px -32px;
+	background: url(http://www.tipperarycocodev.ie/sites/all/themes/tipperarycoco/Tiles/images/controls.png) no-repeat -43px -32px;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -3997,7 +3997,7 @@ position: absolute;
 top: 0;
 left: 15px;
 height: 100%;
-background-image: url('/sites/default/files/img/trans.png');
+background-image: url('http://www.tipperarycocostage.ie/sites/default/files/img/trans.png');
 background-repeat: repeat;
 background-position: top left;}
 h3.Planning.service_title {
