@@ -269,6 +269,7 @@
 					<li><a href="/fire-services">Fire Services</a></li>
 					<li><a href="/heritage">Heritage</a></li>
                     <li><a href="/housing">Housing</a></li>
+					<li><a href="http://www.tipperarylibraries.ie" target="_new">Libraries</a></li>
                     <li><a href="/motor-tax">Motor Tax</a></li>
 					<li><a href="/museum">Museum</a></li>
 					<li><a href="/planning">Planning</a></li>
