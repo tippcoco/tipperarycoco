@@ -285,7 +285,7 @@
                   <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">Municipal Districts 
 				  <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="/clonmel-municipal-district">Clonmel</a></li>
+                    <li><a href="/clonmel-borough-district">Clonmel</a></li>
 					<li><a href="/carrick-on-suir-municipal-district">Carrick-on-Suir</a></li>
 					<li><a href="/cashel-tipperary-municipal-district">Cashel-Tipperary</a></li>
 					<li><a href="/nenagh-municipal-district">Nenagh</a></li>
