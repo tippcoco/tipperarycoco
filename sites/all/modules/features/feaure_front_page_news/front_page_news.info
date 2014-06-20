@@ -1,0 +1,14 @@
+name = Front Page News
+description = Featur for managing Front Page News changes
+core = 7.x
+package = Features
+version = 7.x-1.0-beta1
+project = front_page_news
+dependencies[] = date_ical
+dependencies[] = date_views
+dependencies[] = page_manager
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = front_page_news
+features_exclude[dependencies][ctools] = ctools
