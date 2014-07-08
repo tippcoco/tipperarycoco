@@ -45,6 +45,9 @@ font-weight: normal;
 text-transform: capitalize;
 padding: 3px;
 }
+.newsfront-title {
+min-height: 0px !important;}
+
 .planicon {
 display: inline-block;
 width: 60%}
