@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Phonebook feature.
+ */
+
+include_once 'phonebook.features.inc';
