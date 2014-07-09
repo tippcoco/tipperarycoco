@@ -573,3 +573,6 @@ $conf['lock_inc']               = 'sites/all/modules/redis/redis.lock.inc';
 $conf['path_inc']               = 'sites/all/modules/redis/redis.path.inc';
 $conf['cache_backends'][]       = 'sites/all/modules/redis/redis.autoload.inc';
 $conf['cache_default_class']    = 'Redis_Cache';
+
+# Fix feeds import issue DMW 09072014
+$conf['feeds_process_limit'] = 2000;
