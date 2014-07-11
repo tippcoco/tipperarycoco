@@ -11,6 +11,465 @@ function login_area_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'councillors';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Councillors';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Councillors';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
+  $handler->display->display_options['query']['options']['pure_distinct'] = TRUE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_accordion';
+  $handler->display->display_options['style_options']['grouping'] = array(
+    0 => array(
+      'field' => 'field_electoral_area',
+      'rendered' => 1,
+      'rendered_strip' => 0,
+    ),
+  );
+  $handler->display->display_options['style_options']['row_class'] = 'services';
+  $handler->display->display_options['style_options']['collapsible'] = 1;
+  $handler->display->display_options['style_options']['row-start-open'] = 'none';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_councillor_e_mail' => 'field_councillor_e_mail',
+    'field_electoral_area' => 'field_electoral_area',
+    'field_political_party' => 'field_political_party',
+  );
+  $handler->display->display_options['row_options']['separator'] = '</br>';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Councillor Picture */
+  $handler->display->display_options['fields']['field_councillor_picture']['id'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['table'] = 'field_data_field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['field'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_councillor_picture']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Councillor E-Mail */
+  $handler->display->display_options['fields']['field_councillor_e_mail']['id'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['table'] = 'field_data_field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['field'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['label'] = 'E-Mail';
+  /* Field: Content: Electoral Area */
+  $handler->display->display_options['fields']['field_electoral_area']['id'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['field'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['exclude'] = TRUE;
+  /* Field: Content: Political Party */
+  $handler->display->display_options['fields']['field_political_party']['id'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['table'] = 'field_data_field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['field'] = 'field_political_party';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = 'read more...';
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  /* Sort criterion: Content: Electoral Area (field_electoral_area) */
+  $handler->display->display_options['sorts']['field_electoral_area_value']['id'] = 'field_electoral_area_value';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['field'] = 'field_electoral_area_value';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['field_electoral_area_value']['expose']['label'] = 'Electoral Area (field_electoral_area)';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
+  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['vocabularies'] = array(
+    'area' => 'area',
+  );
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '3';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'councillors' => 'councillors',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'councillors';
+
+  /* Display: MDO Councillors */
+  $handler = $view->new_display('block', 'MDO Councillors', 'block_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'MDO Councillors';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_councillor_e_mail' => 'field_councillor_e_mail',
+    'field_electoral_area' => 'field_electoral_area',
+    'field_political_party' => 'field_political_party',
+  );
+  $handler->display->display_options['row_options']['separator'] = '</br>';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Councillor Picture */
+  $handler->display->display_options['fields']['field_councillor_picture']['id'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['table'] = 'field_data_field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['field'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_councillor_picture']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Councillor E-Mail */
+  $handler->display->display_options['fields']['field_councillor_e_mail']['id'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['table'] = 'field_data_field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['field'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['label'] = 'E-Mail';
+  /* Field: Content: Electoral Area */
+  $handler->display->display_options['fields']['field_electoral_area']['id'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['field'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['exclude'] = TRUE;
+  /* Field: Content: Political Party */
+  $handler->display->display_options['fields']['field_political_party']['id'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['table'] = 'field_data_field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['field'] = 'field_political_party';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['alter']['text'] = 'read more...';
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+
+  /* Display: MDO Councillors-Your Council */
+  $handler = $view->new_display('block', 'MDO Councillors-Your Council', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'MDO Councillors';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Councillor Picture */
+  $handler->display->display_options['fields']['field_councillor_picture']['id'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['table'] = 'field_data_field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['field'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_class'] = 'imgouter1';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_councillor_picture']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['alter']['text'] = 'Cllr [field_first_name] ';
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  /* Field: Content: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_last_name']['element_class'] = 'lastname';
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['element_default_classes'] = FALSE;
+  /* Field: Content: Councillor E-Mail */
+  $handler->display->display_options['fields']['field_councillor_e_mail']['id'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['table'] = 'field_data_field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['field'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['label'] = 'E-Mail';
+  /* Field: Content: Electoral Area */
+  $handler->display->display_options['fields']['field_electoral_area']['id'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['field'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['exclude'] = TRUE;
+  /* Field: Content: Political Party */
+  $handler->display->display_options['fields']['field_political_party']['id'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['table'] = 'field_data_field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['field'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['label'] = '';
+  $handler->display->display_options['fields']['field_political_party']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
+  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['index'] = '1';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['vocabularies'] = array(
+    'area' => 'area',
+  );
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '3';
+
+  /* Display: MDO Councillors1 */
+  $handler = $view->new_display('block', 'MDO Councillors1', 'block_3');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = '%1 Councillors';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Councillor Picture */
+  $handler->display->display_options['fields']['field_councillor_picture']['id'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['table'] = 'field_data_field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['field'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_class'] = 'imgouter1';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_councillor_picture']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['alter']['text'] = 'Cllr [field_first_name] ';
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  /* Field: Content: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_last_name']['element_class'] = 'lastname';
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['element_default_classes'] = FALSE;
+  /* Field: Content: Councillor E-Mail */
+  $handler->display->display_options['fields']['field_councillor_e_mail']['id'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['table'] = 'field_data_field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['field'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['label'] = 'E-Mail';
+  /* Field: Content: Electoral Area */
+  $handler->display->display_options['fields']['field_electoral_area']['id'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['field'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['exclude'] = TRUE;
+  /* Field: Content: Political Party */
+  $handler->display->display_options['fields']['field_political_party']['id'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['table'] = 'field_data_field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['field'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['label'] = '';
+  $handler->display->display_options['fields']['field_political_party']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Has taxonomy term ID (with depth) */
+  $handler->display->display_options['arguments']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['table'] = 'node';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_type'] = 'raw';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['index'] = '0';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['default_argument_options']['use_alias'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['vocabularies'] = array(
+    'area' => 'area',
+  );
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['type'] = 'convert';
+  $handler->display->display_options['arguments']['term_node_tid_depth']['validate_options']['transform'] = TRUE;
+  $handler->display->display_options['arguments']['term_node_tid_depth']['depth'] = '3';
+
+  /* Display: All Councillors */
+  $handler = $view->new_display('block', 'All Councillors', 'block_4');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'MDO Councillors';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Councillor Picture */
+  $handler->display->display_options['fields']['field_councillor_picture']['id'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['table'] = 'field_data_field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['field'] = 'field_councillor_picture';
+  $handler->display->display_options['fields']['field_councillor_picture']['label'] = '';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_class'] = 'imgouter1';
+  $handler->display->display_options['fields']['field_councillor_picture']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_councillor_picture']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_councillor_picture']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['alter']['text'] = 'Cllr [field_first_name] ';
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
+  /* Field: Content: Last Name */
+  $handler->display->display_options['fields']['field_last_name']['id'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['table'] = 'field_data_field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['field'] = 'field_last_name';
+  $handler->display->display_options['fields']['field_last_name']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_last_name']['element_class'] = 'lastname';
+  $handler->display->display_options['fields']['field_last_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_last_name']['element_default_classes'] = FALSE;
+  /* Field: Content: Councillor E-Mail */
+  $handler->display->display_options['fields']['field_councillor_e_mail']['id'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['table'] = 'field_data_field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['field'] = 'field_councillor_e_mail';
+  $handler->display->display_options['fields']['field_councillor_e_mail']['label'] = 'E-Mail';
+  /* Field: Content: Electoral Area */
+  $handler->display->display_options['fields']['field_electoral_area']['id'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['field'] = 'field_electoral_area';
+  $handler->display->display_options['fields']['field_electoral_area']['exclude'] = TRUE;
+  /* Field: Content: Political Party */
+  $handler->display->display_options['fields']['field_political_party']['id'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['table'] = 'field_data_field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['field'] = 'field_political_party';
+  $handler->display->display_options['fields']['field_political_party']['label'] = '';
+  $handler->display->display_options['fields']['field_political_party']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Electoral Area (field_electoral_area) */
+  $handler->display->display_options['sorts']['field_electoral_area_value']['id'] = 'field_electoral_area_value';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['table'] = 'field_data_field_electoral_area';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['field'] = 'field_electoral_area_value';
+  $handler->display->display_options['sorts']['field_electoral_area_value']['expose']['label'] = 'Electoral Area (field_electoral_area)';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+
+  /* Display: Councillors Logged In */
+  $handler = $view->new_display('block', 'Councillors Logged In', 'block_5');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['label'] = 'phonebook';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/members/phonebook">STAFF PHONEBOOK</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'full_html';
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Login (field_login) */
+  $handler->display->display_options['arguments']['field_login_target_id']['id'] = 'field_login_target_id';
+  $handler->display->display_options['arguments']['field_login_target_id']['table'] = 'field_data_field_login';
+  $handler->display->display_options['arguments']['field_login_target_id']['field'] = 'field_login_target_id';
+  $handler->display->display_options['arguments']['field_login_target_id']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['field_login_target_id']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['field_login_target_id']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_login_target_id']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_login_target_id']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_login_target_id']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_login_target_id']['validate']['type'] = 'user';
+  $handler->display->display_options['arguments']['field_login_target_id']['validate_options']['type'] = 'either';
+  $handler->display->display_options['arguments']['field_login_target_id']['validate_options']['restrict_roles'] = TRUE;
+  $handler->display->display_options['arguments']['field_login_target_id']['validate_options']['roles'] = array(
+    22 => '22',
+  );
+  $handler->display->display_options['arguments']['field_login_target_id']['validate']['fail'] = 'access denied';
+  $export['councillors'] = $view;
+
+  $view = new view();
   $view->name = 'members_area';
   $view->description = '';
   $view->tag = 'default';
@@ -397,13 +856,6 @@ function login_area_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'members_area' => 'members_area',
-  );
   /* Filter criterion: Taxonomy term: Term */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_term_data';
@@ -421,6 +873,13 @@ function login_area_views_default_views() {
   $handler->display->display_options['filters']['field_circulars_fid']['table'] = 'field_data_field_circulars';
   $handler->display->display_options['filters']['field_circulars_fid']['field'] = 'field_circulars_fid';
   $handler->display->display_options['filters']['field_circulars_fid']['operator'] = 'not empty';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'members_area' => 'members_area',
+  );
 
   /* Display: Members Area All */
   $handler = $view->new_display('block', 'Members Area All', 'block');
@@ -498,47 +957,37 @@ function login_area_views_default_views() {
   $handler->display->display_options['fields']['field_first_name_phonebook']['id'] = 'field_first_name_phonebook';
   $handler->display->display_options['fields']['field_first_name_phonebook']['table'] = 'field_data_field_first_name_phonebook';
   $handler->display->display_options['fields']['field_first_name_phonebook']['field'] = 'field_first_name_phonebook';
+  $handler->display->display_options['fields']['field_first_name_phonebook']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name_phonebook']['element_label_colon'] = FALSE;
   /* Field: Content: Last Name */
   $handler->display->display_options['fields']['field_last_name_phonebook']['id'] = 'field_last_name_phonebook';
   $handler->display->display_options['fields']['field_last_name_phonebook']['table'] = 'field_data_field_last_name_phonebook';
   $handler->display->display_options['fields']['field_last_name_phonebook']['field'] = 'field_last_name_phonebook';
-  /* Field: Content: Telephone */
-  $handler->display->display_options['fields']['field_telephone_phonebook']['id'] = 'field_telephone_phonebook';
-  $handler->display->display_options['fields']['field_telephone_phonebook']['table'] = 'field_data_field_telephone_phonebook';
-  $handler->display->display_options['fields']['field_telephone_phonebook']['field'] = 'field_telephone_phonebook';
-  /* Field: Content: Department */
-  $handler->display->display_options['fields']['field_department_phonebook']['id'] = 'field_department_phonebook';
-  $handler->display->display_options['fields']['field_department_phonebook']['table'] = 'field_data_field_department_phonebook';
-  $handler->display->display_options['fields']['field_department_phonebook']['field'] = 'field_department_phonebook';
+  $handler->display->display_options['fields']['field_last_name_phonebook']['label'] = '';
+  $handler->display->display_options['fields']['field_last_name_phonebook']['element_label_colon'] = FALSE;
   /* Field: Content: Job Title */
   $handler->display->display_options['fields']['field_title_phonebook']['id'] = 'field_title_phonebook';
   $handler->display->display_options['fields']['field_title_phonebook']['table'] = 'field_data_field_title_phonebook';
   $handler->display->display_options['fields']['field_title_phonebook']['field'] = 'field_title_phonebook';
+  $handler->display->display_options['fields']['field_title_phonebook']['label'] = '';
+  $handler->display->display_options['fields']['field_title_phonebook']['element_label_colon'] = FALSE;
+  /* Field: Content: Department */
+  $handler->display->display_options['fields']['field_department_phonebook']['id'] = 'field_department_phonebook';
+  $handler->display->display_options['fields']['field_department_phonebook']['table'] = 'field_data_field_department_phonebook';
+  $handler->display->display_options['fields']['field_department_phonebook']['field'] = 'field_department_phonebook';
+  $handler->display->display_options['fields']['field_department_phonebook']['label'] = '';
+  $handler->display->display_options['fields']['field_department_phonebook']['element_label_colon'] = FALSE;
+  /* Field: Content: Telephone */
+  $handler->display->display_options['fields']['field_telephone_phonebook']['id'] = 'field_telephone_phonebook';
+  $handler->display->display_options['fields']['field_telephone_phonebook']['table'] = 'field_data_field_telephone_phonebook';
+  $handler->display->display_options['fields']['field_telephone_phonebook']['field'] = 'field_telephone_phonebook';
+  $handler->display->display_options['fields']['field_telephone_phonebook']['label'] = '';
+  $handler->display->display_options['fields']['field_telephone_phonebook']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Last Name (field_last_name_phonebook) */
-  $handler->display->display_options['sorts']['field_last_name_phonebook_value']['id'] = 'field_last_name_phonebook_value';
-  $handler->display->display_options['sorts']['field_last_name_phonebook_value']['table'] = 'field_data_field_last_name_phonebook';
-  $handler->display->display_options['sorts']['field_last_name_phonebook_value']['field'] = 'field_last_name_phonebook_value';
-  $handler->display->display_options['sorts']['field_last_name_phonebook_value']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_last_name_phonebook_value']['expose']['label'] = 'Last Name';
-  /* Sort criterion: Content: First Name (field_first_name_phonebook) */
-  $handler->display->display_options['sorts']['field_first_name_phonebook_value']['id'] = 'field_first_name_phonebook_value';
-  $handler->display->display_options['sorts']['field_first_name_phonebook_value']['table'] = 'field_data_field_first_name_phonebook';
-  $handler->display->display_options['sorts']['field_first_name_phonebook_value']['field'] = 'field_first_name_phonebook_value';
-  $handler->display->display_options['sorts']['field_first_name_phonebook_value']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_first_name_phonebook_value']['expose']['label'] = 'First Name';
-  /* Sort criterion: Content: Department (field_department_phonebook) */
-  $handler->display->display_options['sorts']['field_department_phonebook_value']['id'] = 'field_department_phonebook_value';
-  $handler->display->display_options['sorts']['field_department_phonebook_value']['table'] = 'field_data_field_department_phonebook';
-  $handler->display->display_options['sorts']['field_department_phonebook_value']['field'] = 'field_department_phonebook_value';
-  $handler->display->display_options['sorts']['field_department_phonebook_value']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_department_phonebook_value']['expose']['label'] = 'Department';
-  /* Sort criterion: Content: Job Title (field_title_phonebook) */
-  $handler->display->display_options['sorts']['field_title_phonebook_value']['id'] = 'field_title_phonebook_value';
-  $handler->display->display_options['sorts']['field_title_phonebook_value']['table'] = 'field_data_field_title_phonebook';
-  $handler->display->display_options['sorts']['field_title_phonebook_value']['field'] = 'field_title_phonebook_value';
-  $handler->display->display_options['sorts']['field_title_phonebook_value']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_title_phonebook_value']['expose']['label'] = 'Job Title';
+  /* Sort criterion: Content: Last Name (field_last_name_phonebook:format) */
+  $handler->display->display_options['sorts']['field_last_name_phonebook_format']['id'] = 'field_last_name_phonebook_format';
+  $handler->display->display_options['sorts']['field_last_name_phonebook_format']['table'] = 'field_data_field_last_name_phonebook';
+  $handler->display->display_options['sorts']['field_last_name_phonebook_format']['field'] = 'field_last_name_phonebook_format';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['groups'] = array(
     1 => 'AND',
@@ -552,20 +1001,6 @@ function login_area_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'phonebook' => 'phonebook',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Telephone (field_telephone_phonebook) */
-  $handler->display->display_options['filters']['field_telephone_phonebook_value']['id'] = 'field_telephone_phonebook_value';
-  $handler->display->display_options['filters']['field_telephone_phonebook_value']['table'] = 'field_data_field_telephone_phonebook';
-  $handler->display->display_options['filters']['field_telephone_phonebook_value']['field'] = 'field_telephone_phonebook_value';
-  $handler->display->display_options['filters']['field_telephone_phonebook_value']['operator'] = 'not empty';
-  $handler->display->display_options['filters']['field_telephone_phonebook_value']['group'] = 1;
   /* Filter criterion: Content: First Name (field_first_name_phonebook) */
   $handler->display->display_options['filters']['field_first_name_phonebook_value']['id'] = 'field_first_name_phonebook_value';
   $handler->display->display_options['filters']['field_first_name_phonebook_value']['table'] = 'field_data_field_first_name_phonebook';
@@ -581,43 +1016,24 @@ function login_area_views_default_views() {
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
     8 => 0,
-    9 => 0,
-    21 => 0,
     22 => 0,
+    9 => 0,
     10 => 0,
     11 => 0,
     12 => 0,
     13 => 0,
-    5 => 0,
     14 => 0,
     15 => 0,
     16 => 0,
-    7 => 0,
-    6 => 0,
     17 => 0,
     18 => 0,
     19 => 0,
     20 => 0,
-  );
-  $handler->display->display_options['filters']['field_first_name_phonebook_value']['group_info']['label'] = 'First Name (field_first_name_phonebook)';
-  $handler->display->display_options['filters']['field_first_name_phonebook_value']['group_info']['identifier'] = 'field_first_name_phonebook_value';
-  $handler->display->display_options['filters']['field_first_name_phonebook_value']['group_info']['group_items'] = array(
-    1 => array(
-      'title' => '',
-      'operator' => 'contains',
-      'value' => '',
-    ),
-    2 => array(
-      'title' => '',
-      'operator' => 'contains',
-      'value' => '',
-    ),
-    3 => array(
-      'title' => '',
-      'operator' => 'contains',
-      'value' => '',
-    ),
+    21 => 0,
   );
   /* Filter criterion: Content: Last Name (field_last_name_phonebook) */
   $handler->display->display_options['filters']['field_last_name_phonebook_value']['id'] = 'field_last_name_phonebook_value';
@@ -631,61 +1047,27 @@ function login_area_views_default_views() {
   $handler->display->display_options['filters']['field_last_name_phonebook_value']['expose']['operator'] = 'field_last_name_phonebook_value_op';
   $handler->display->display_options['filters']['field_last_name_phonebook_value']['expose']['identifier'] = 'field_last_name_phonebook_value';
   $handler->display->display_options['filters']['field_last_name_phonebook_value']['expose']['remember_roles'] = array(
-    2 => 0,
-    22 => '22',
-    1 => 0,
-    3 => 0,
-    8 => 0,
-    9 => 0,
-    21 => 0,
-    10 => 0,
-    11 => 0,
-    12 => 0,
-    13 => 0,
-    5 => 0,
-    14 => 0,
-    15 => 0,
-    16 => 0,
-    7 => 0,
-    6 => 0,
-    17 => 0,
-    18 => 0,
-    19 => 0,
-    20 => 0,
-  );
-  /* Filter criterion: Content: Department (field_department_phonebook) */
-  $handler->display->display_options['filters']['field_department_phonebook_value']['id'] = 'field_department_phonebook_value';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['table'] = 'field_data_field_department_phonebook';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['field'] = 'field_department_phonebook_value';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['group'] = 2;
-  $handler->display->display_options['filters']['field_department_phonebook_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['operator_id'] = 'field_department_phonebook_value_op';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['label'] = 'Department';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['operator'] = 'field_department_phonebook_value_op';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['identifier'] = 'field_department_phonebook_value';
-  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
     8 => 0,
-    9 => 0,
-    21 => 0,
     22 => 0,
+    9 => 0,
     10 => 0,
     11 => 0,
     12 => 0,
     13 => 0,
-    5 => 0,
     14 => 0,
     15 => 0,
     16 => 0,
-    7 => 0,
-    6 => 0,
     17 => 0,
     18 => 0,
     19 => 0,
     20 => 0,
+    21 => 0,
   );
   /* Filter criterion: Content: Job Title (field_title_phonebook) */
   $handler->display->display_options['filters']['field_title_phonebook_value']['id'] = 'field_title_phonebook_value';
@@ -702,25 +1084,65 @@ function login_area_views_default_views() {
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
     8 => 0,
-    9 => 0,
-    21 => 0,
     22 => 0,
+    9 => 0,
     10 => 0,
     11 => 0,
     12 => 0,
     13 => 0,
-    5 => 0,
     14 => 0,
     15 => 0,
     16 => 0,
-    7 => 0,
-    6 => 0,
     17 => 0,
     18 => 0,
     19 => 0,
     20 => 0,
+    21 => 0,
   );
+  /* Filter criterion: Content: Department (field_department_phonebook) */
+  $handler->display->display_options['filters']['field_department_phonebook_value']['id'] = 'field_department_phonebook_value';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['table'] = 'field_data_field_department_phonebook';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['field'] = 'field_department_phonebook_value';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['operator'] = 'contains';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['group'] = 2;
+  $handler->display->display_options['filters']['field_department_phonebook_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['operator_id'] = 'field_department_phonebook_value_op';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['label'] = 'Department';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['operator'] = 'field_department_phonebook_value_op';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['identifier'] = 'field_department_phonebook_value';
+  $handler->display->display_options['filters']['field_department_phonebook_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+    6 => 0,
+    7 => 0,
+    8 => 0,
+    22 => 0,
+    9 => 0,
+    10 => 0,
+    11 => 0,
+    12 => 0,
+    13 => 0,
+    14 => 0,
+    15 => 0,
+    16 => 0,
+    17 => 0,
+    18 => 0,
+    19 => 0,
+    20 => 0,
+    21 => 0,
+  );
+  /* Filter criterion: Content: Telephone (field_telephone_phonebook) */
+  $handler->display->display_options['filters']['field_telephone_phonebook_value']['id'] = 'field_telephone_phonebook_value';
+  $handler->display->display_options['filters']['field_telephone_phonebook_value']['table'] = 'field_data_field_telephone_phonebook';
+  $handler->display->display_options['filters']['field_telephone_phonebook_value']['field'] = 'field_telephone_phonebook_value';
+  $handler->display->display_options['filters']['field_telephone_phonebook_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_telephone_phonebook_value']['group'] = 1;
   $handler->display->display_options['path'] = 'members/phonebook';
   $export['members_area_all'] = $view;
 
