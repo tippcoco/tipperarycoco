@@ -215,7 +215,7 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'tipperarycocostage',
+      'database' => 'actipperarycoco',
       'username' => 'administrator',
       'password' => 'Hor@tio1',
       'host' => 'localhost',
@@ -576,3 +576,5 @@ $conf['cache_default_class']    = 'Redis_Cache';
 
 # Fix feeds import issue DMW 09072014
 $conf['feeds_process_limit'] = 2000;
+
+@include 'local.settings.php';
