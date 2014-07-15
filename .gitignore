@@ -1,3 +1,4 @@
 sites/*/files
 sites/*/private
-
+sites/all/modules/field_group/redis
+sites/all/modules/pathauto/redis
